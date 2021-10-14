@@ -1,5 +1,1 @@
-number = input()
-summa = int(number[0]) + int(number[1])
-multiplication = int(number[0]) * int(number[1])
-print(summa, multiplication)
-print('Refactor 2')
+print(int('AAAB', 16))
