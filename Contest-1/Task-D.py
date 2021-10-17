@@ -1,7 +1,7 @@
 file_input = open('gcd.in', 'r')
 file_output = open('gcd.out', 'w')
 
-a, b = map(int, file_input.readline())
+a, b = map(int, file_input.readline().split())
 while a != b:
     if a > b:
         a -= b
