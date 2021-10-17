@@ -16,8 +16,4 @@ for i in range(1):
 for recruits in recruit_table:
     print(recruits, *recruit_table[recruits])
 
-arr =[]
-tuple = ()
-s = {}
-
 
