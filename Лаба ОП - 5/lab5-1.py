@@ -7,8 +7,7 @@ name = "John"
 age = 17
 print(name == "John" or age == 17)  # True если человека зовут John или ему 17
 
-print(not (name != "John") or not (
-            age != 17))  # Напишите логическое выражение со значением "человека зовут John или ему 17"
+print(not (name != "John") or not (age != 17))  # Напишите логическое выражение со значением "человека зовут John или ему 17"
 # с использованием оператора not
 
 
@@ -23,4 +22,4 @@ print(name == "John" or not age > 17)  # True если человека зову
 
 # Напишите логическое выражение, проверяющее следующее высказывание: "Человека зовут не John, он старше 20 лет и первая буква его имени не ‘E’".
 
-print(name is not "John" and age > 20 and name[0] is 'E')
+print(name is not "John" and age > 20 and name[0] is not 'E')
