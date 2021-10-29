@@ -1,5 +1,7 @@
-print(123 // 10)
-print(-123 // 10)
-print(123 % 10)
-print(123 % -10)
-print(-123 % -10)
+dictionary = {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
+for key in dictionary:
+    print(key, dictionary[key])
+for key, value in dictionary.items():
+    print(f'{key=}, {value=}')
+
+print(dictionary.items())

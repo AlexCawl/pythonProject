@@ -7,14 +7,22 @@ def output(A, B, C, counter, roots):
 
 
 def equation(A, B, C):
-    D = B ** 2 - 4 * A * C
-    if D < 0:
-        output(A, B, C, 0, [])
-    elif D == 0:
-        output(A, B, C, 1, [((-1)*B)/(2*A)])
+    if A != 0:
+        D = B ** 2 - 4 * A * C
+        if D < 0:
+            output(A, B, C, 0, [])
+        elif D == 0:
+            output(A, B, C, 1, [((-1) * B) / (2 * A)])
+        else:
+            output(A, B, C, 2, [((-1) * B - D ** 0.5) / (2 * A), ((-1) * B + D ** 0.5) / (2 * A)])
+    elif B == 0:
+        print("Бесконечное множество решений")
     else:
-        output(A, B, C, 2, [((-1)*B - D**0.5)/(2*A), ((-1)*B + D**0.5)/(2*A)])
+        output(A, B, C, 1, [((-1)*C)/B])
 
 
-a, b, c = list(map(float, input().strip().split()))
+a, b, c = [0, 0, 4]
+equation(a, b, c)
+
+a, b, c = [1, -8, 16]
 equation(a, b, c)
