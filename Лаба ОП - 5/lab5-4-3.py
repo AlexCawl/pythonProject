@@ -1,3 +1,5 @@
+# Дополнительные требования:
+# При смене дня во время пути (с ночи на утро), учитывать +1 день к общему счетчику.
 def arrival(Hours_departure, Minutes_departure, Hours_road, Minutes_road):
     res_H = (Hours_departure + Hours_road + (Minutes_departure + Minutes_road) // 60)
     res_M = (Minutes_departure + Minutes_road) % 60
@@ -12,8 +14,8 @@ def arrival(Hours_departure, Minutes_departure, Hours_road, Minutes_road):
     print(f"{days} days")
 
 
-# Hotp = int(input())
-# Motp = int(input())
-# Hp = int(input())
-# Mp = int(input())
-arrival(8, 0, 8, 12)
+Hotp = int(input())
+Motp = int(input())
+Hp = int(input())
+Mp = int(input())
+arrival(Hotp, Motp, Hp, Mp)
