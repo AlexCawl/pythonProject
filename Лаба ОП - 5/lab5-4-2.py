@@ -23,8 +23,5 @@ def equation(A, B, C):
         output(A, B, C, 1, [((-1)*C)/B])
 
 
-a, b, c = [0, 0, 4]
-equation(a, b, c)
-
-a, b, c = [1, -8, 16]
+a, b, c = list(map(float, input().split()))
 equation(a, b, c)
