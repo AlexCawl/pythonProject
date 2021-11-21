@@ -34,3 +34,5 @@ matrix_printing(M, K, matrix_B)
 matrix_C = numpy.dot(matrix_A, matrix_B)
 matrix_printing(N, K, matrix_C)
 
+f_input.close()
+f_output.close()
